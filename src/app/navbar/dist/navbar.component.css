@@ -1,0 +1,25 @@
+nav {
+  background: #F2C335;
+  color: white;
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}

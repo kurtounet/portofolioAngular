@@ -1,0 +1,16 @@
+<section class="cardProject">
+  <img class="cardProjectImage" [src]="project.image" alt="{{ project.title }}" />
+
+  <div class="cardProjectContent">
+    <h2 class="cardProjectTitle">{{ project.title }}</h2>
+    <p class="cardProjectDescription">{{ project.description }}</p>
+    <div class="cardProjectListTech">
+      <section *ngFor="let imagetech of project.imagetech;">
+        <img class="cardProjectImageTech" [src]="imagetech" alt="{{ project.title }}">
+      </section>
+    </div>
+    <div class="divButton">
+      <a [href]="project.page" class="aButton">Voir le projet</a>
+    </div>
+  </div>
+</section>
