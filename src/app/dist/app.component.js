@@ -24,6 +24,9 @@ var AppComponent = /** @class */ (function () {
         this.title = 'Portofolio d\' Anthony Bossut';
         console.log("start");
     }
+    AppComponent.prototype.ngOnInit = function () {
+        particlesJS.load("particles-js", "assets/particlesjs-config.json", null);
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'app-root',

@@ -12,6 +12,7 @@ import { CardprojectComponent } from './sectionproject/cardproject/cardproject.c
 import { ModelJob } from './models/ModelJob.models';
 import { CardSkillsComponent } from './sectionskills/card-skills/card-skills.component';
 import { CardTechnoComponent } from './sectiontech/card-techno/card-techno.component';
+declare var particlesJS: any;
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -38,5 +39,8 @@ export class AppComponent {
 
     console.log("start");
 
+  }
+  ngOnInit(): void {
+    particlesJS.load("particles-js", "assets/particlesjs-config.json", null);
   }
 }

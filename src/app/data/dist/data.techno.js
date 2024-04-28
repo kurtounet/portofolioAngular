@@ -29,7 +29,7 @@ exports.TECHNO = [
     {
         "category": "Outils de développement",
         "obj": [
-            "git",
+            "github",
             "docker",
             "vscode"
         ]
