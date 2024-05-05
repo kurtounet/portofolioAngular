@@ -1,0 +1,37 @@
+#sectionformContact {
+  border: 1px solid #d18007;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+#sectionformContact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  width: 80%;
+}
+#sectionformContact form button {
+  margin: 2rem;
+  width: 80%;
+  background-color: #d18007;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#sectionformContact form button:hover {
+  background-color: #1a1206;
+}
+#sectionformContact form .form-group {
+  width: 90%;
+}
+#sectionformContact form .form-group input::placeholder {
+  color: #a3a2a0;
+  font-size: 0.8rem;
+}
