@@ -12,6 +12,7 @@ import { CardprojectComponent } from './sectionproject/cardproject/cardproject.c
 import { ModelJob } from './models/ModelJob.models';
 import { CardSkillsComponent } from './sectionskills/card-skills/card-skills.component';
 import { CardTechnoComponent } from './sectiontech/card-techno/card-techno.component';
+import { CircularListComponent } from './section-landing/circular-list/circular-list.component';
 @Component({
   selector: 'app-root',
   standalone: true,

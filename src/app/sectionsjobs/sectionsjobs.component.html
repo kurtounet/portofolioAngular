@@ -1,6 +1,8 @@
-<section id="sectionJobs">
+<section class="sectionJobs">
   <h1>Mon parcours</h1>
-  <section *ngFor="let job of listJobs">
-    <app-card-job [job]="job"></app-card-job>
+  <section class="listOfJobs">
+    <section *ngFor="let job of listJobs">
+      <app-card-job [job]="job"></app-card-job>
+    </section>
   </section>
 </section>

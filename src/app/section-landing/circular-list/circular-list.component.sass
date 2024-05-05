@@ -1,0 +1,38 @@
+$circular-list-size: 600px
+$items-count: 5 // Cette ligne doit être adaptée si la liste change dynamiquement
+$item-offset: $circular-list-size / 2 - 50px // Définition de l'offset des éléments
+
+.circular-list
+    list-style: none
+    padding: 0
+    width: $circular-list-size
+    height: $circular-list-size
+    position: relative
+    margin: 20px auto
+    border-radius: 50%
+    //border: 1px solid #000
+    overflow: hidden // Ajouté pour contenir les animations à l'intérieur de la bordure
+    animation: rotate 5s linear infinite
+
+    li
+        position: absolute
+        width: 90%
+        height: 90%
+        text-align: center
+        line-height: $circular-list-size // Aligner le texte verticalement
+        transform-origin: 50% 50%
+        img
+            width: 60px
+            height: 60px
+            object-fit: contain
+
+        @for $i from 1 through $items-count
+            &:nth-child(#{$i})
+                $angle: (360deg / $items-count) * ($i - 1)
+                transform: rotate($angle) translate($item-offset) rotate(-$angle)
+
+@keyframes rotate
+    from
+        transform: rotate(0deg)
+    to
+        transform: rotate(360deg)

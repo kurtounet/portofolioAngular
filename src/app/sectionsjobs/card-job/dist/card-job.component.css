@@ -1,10 +1,11 @@
-#cardsJob {
+.cardsJob {
   padding: 10px;
   display: flex;
-  width: 50vw;
+  width: 270px;
   height: fit-content;
 }
-#cardsJob .bulle-line {
+
+.bulle-line {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,13 +14,15 @@
   height: 100%;
   margin: 5px;
 }
-#cardsJob .bulle-line .line {
+
+.line {
   background-color: #ffff;
   width: 2px;
   height: 100px;
 }
-#cardsJob .bulle-line .bulle {
-  background-color: red;
+
+.bulle {
+  background-color: #C50836;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,49 +30,57 @@
   height: 15px;
   border-radius: 50%;
 }
-#cardsJob .cardJobContent {
+
+.cardJobContent {
   width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: column;
 }
-#cardsJob .cardJobContent .year {
+
+.year {
   background-color: #333;
-  color: red;
+  color: #fff;
   margin: 0;
   padding: 5px;
 }
-#cardsJob .cardJobContent .content {
+
+.content {
   background-color: white;
   border-radius: 5px;
   align-content: flex-start;
 }
-#cardsJob .cardJobContent .content .poste {
+
+.poste {
   margin: 0;
   padding: 5px;
   color: red;
   font-size: 0.8rem;
 }
-#cardsJob .cardJobContent .content .companyAndButton {
+
+.companyAndButton {
   display: flex;
   justify-content: space-between;
 }
-#cardsJob .cardJobContent .content .company, #cardsJob .cardJobContent .content .pButton {
+
+.company, .pButton {
   margin: 0;
   padding: 5px;
   color: black;
   font-size: 0.8rem;
 }
-#cardsJob .cardJobContent .content .pButton {
+
+.pButton {
   display: flex;
   justify-content: flex-end;
   width: 100%;
   font-size: 1rem;
 }
-#cardsJob .cardJobContent .content:hover {
+.pButton:hover {
   cursor: pointer;
 }
-#cardsJob .cardJobContent .content .skill {
+
+.skill {
   color: black;
   display: flex;
   flex-wrap: wrap;
@@ -81,11 +92,11 @@
   margin: 0;
   list-style: none;
 }
-#cardsJob .cardJobContent .content .skill li {
+.skill li {
   margin: 5px;
   padding: 5px;
   border-radius: 5px;
-  background-color: lightgray;
+  background-color: fffff;
   color: black;
   font-size: 0.8rem;
 }

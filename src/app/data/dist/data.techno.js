@@ -10,6 +10,7 @@ exports.TECHNO = [
             "javascript",
             "html5",
             "css3",
+            "bootstrap5",
             "sass"
         ]
     },
@@ -18,6 +19,7 @@ exports.TECHNO = [
         "obj": [
             "angular",
             "symfony",
+            "apiplatform",
             "wordpress"
         ],
         "objfuture": [
@@ -39,22 +41,11 @@ exports.TECHNO = [
         "obj": [
             "mysql",
             "mariadb",
-            "postgresql",
-            "mongodb",
-            "sqlite"
+            "mongodb"
         ]
     },
     {
-        "category": "Méthodologies et outils de gestion de projet",
-        "obj": [
-            "agile",
-            "scrum",
-            "kanban",
-            "trello"
-        ]
-    },
-    {
-        "category": "Conception d'interfaces utilisateur UI/UX",
+        "category": "UI/UX",
         "obj": [
             "figma"
         ]

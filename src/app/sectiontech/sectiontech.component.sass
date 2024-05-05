@@ -1,67 +1,67 @@
 
-#sectionTechnologies
+.sectionTechnologies
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
     width: 100%
     height: 100%
+    padding: 1rem
 
-    #sectionListTechno
-        display: flex
-        flex-direction: column
-        align-items: center
-        justify-content: center
-        width: 100%
-        height: 100%
+.sectionListTechno
+    //background-color: #D94423
+    display: flex
+    flex-direction: row
 
-        .cardTechno
-            background-color: #ffff
-            border: 2px solid #D94423
-            border-radius: 8px
-            width: 270px
-            height: fit-content
-            padding: .5rem
-            margin: 10px
-            color: black
-            display: flex
-            flex-direction: column
-            align-items: center
-            justify-content: center
+    align-items: stretch
+    justify-content: stretch
+    width: 100%
+    height: 100%
+    padding: 1rem
 
-        .cardTechnoCategory
-            width: 100%
-            margin: 1rem
-            font-size: 1.5rem
-            font-weight: bold
-            text-align: center
-            color: #d18007
+.cardTechno
+    background-color: #ffff
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    border: 2px solid #D94423
+    border-radius: 8px
+    max-width: fit-content
+    height: fit-content
+    padding: .5rem
+    margin-top: 10px
+    color: black
 
-        .cardListTechno
-            padding-left: 0
-            list-style: none
-            display: flex
-            flex-direction: column
-            align-items: center
-            justify-content: center
-            width: 100%
-            height: 100%
-            margin: 0
-        .techno
-            display: flex
-            flex-direction: column
-            align-items: center
-            justify-content: center
+.titleCardTechno
+    width: 100%
+    margin: 1rem
+    font-size: 1.5rem
+    font-weight: bold
+    text-align: center
+    color: #d18007
 
-            img
-                object-fit: cover
-                width: 100px
-                height: 100px
+.cardListTechno
+    padding-left: 0
+    list-style: none
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 100%
+    margin: 0
 
-@media screen and (min-width: 768px)
-    #sectionTechnologies
-        display: flex
-        flex-direction: row
-        align-items: flex-start
-    .cardListTechno
-        flex-direction: row
+.techno
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    img
+        border-radius: 10%
+        margin: 0.5rem
+        object-fit: contain
+        object-position: center
+        width: 50px
+        height: 50px

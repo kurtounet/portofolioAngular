@@ -1,11 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-
+$gris: #DEDEDE
+$spider: #DEDEDE
 $bleu: #0477BF
 $jaune: #F2C335
 $orange: #D94423
 $blanc: #ffffff
 $noir: #0D0D0D
 $voilet: #d410ee
+$red: #ff0000
 
 $rayon-bulle: 15px
 $radius-card: 8px
@@ -18,6 +20,87 @@ $w-image-projet-card: 100%
 $h-image-projet-card: 100%
 $w-image-technologie: 5vh
 $h-image-technologie: 5vh
+
+.containerSpider
+    border: 1px solid red
+    position: absolute
+    right: 0
+    top: 0
+    //display: flex
+    //justify-content: right
+    // z-index: 100
+
+.spiderContainer
+
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: fit-content
+    height: fit-content
+
+.spiderWeb
+
+    background-color: $spider
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 1.5px
+    height: 10px
+
+.spider
+    margin: 0 0 0 8px
+    object-fit: cover
+    object-position: center
+    width: 10%
+
+.rotating-image
+    //width: 200px //ou la taille que vous désirez */
+    height: auto // conserve les proportions de l'image */
+    animation: flipY 5s linear infinite //, fliphedding 1s ease-in-out infinite // règle l'animation */
+    //animation: fliphedding 2s ease-in-out infinite // règle l'animation */
+    display: block // pour appliquer des marges auto si nécessaire */
+    margin: auto // centre l'image horizontalement */
+    transform-style: preserve-3d // permet une transformation en 3D */
+
+@keyframes flipY
+    from
+        transform: rotateY(0deg)
+
+    to
+        transform: rotateY(360deg)
+@keyframes fliphedding
+    from
+        opacity: 0
+
+    to
+        opacity: 1
+
+@keyframes bounceRight
+    0%, 100%
+        transform: translateX(0) translatey(10) scaleY(1)
+
+    25%
+        transform: translateX(25%) scaleY(1.5)
+
+    50%
+        transform: translateX(50%) scaleY(0.8)
+
+    75%
+        transform: translateX(75%) scaleY(1.5)
+    80%
+        transform: translateX(80%) scaleY(1.5)
+    85%
+        transform: translateX(85%) scaleY(1.5)
+
+    100%
+        transform: translateX(100%) scaleY(1)
+
+.cadeaux
+    animation: bounceRight 3s infinite ease-in-out
+    width: 100px //; /* ou la taille souhaitée */
+    height: auto //; /* pour maintenir l'aspect ratio */
+
 /*
 // $asset: "assets/images/logo-technologie/"
 // $logo-html: $asset + "html.png"

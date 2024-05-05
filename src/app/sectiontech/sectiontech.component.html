@@ -1,14 +1,12 @@
-
-
-<section id="sectionTechnologies">
+<section class="sectionTechnologies">
   <h1>Technologies</h1>
-  <section id="sectionListTechno">
+  <section class="sectionListTechno">
     <section class="cardTechno" *ngFor="let techno of listTechno">
-      <h2 class="cardTechnoCategory">{{ techno.category | titlecase }}</h2>
+      <h2 class="titleCardTechno">{{ techno.category | titlecase }}</h2>
       <ul class="cardListTechno">
         <li class="techno" *ngFor="let techno of techno.obj">
-          <img src="assets/svg/logo-tech/{{ techno }}_logo.svg" alt="">
-          <p>{{ techno }}</p>
+          <img src="assets/svg/logo-tech/{{ techno }}_logo.svg" alt="" class="rotating-image">
+
         </li>
       </ul>
     </section>
