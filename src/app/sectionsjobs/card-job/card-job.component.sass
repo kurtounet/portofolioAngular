@@ -1,5 +1,5 @@
 @import "../../../styles.sass"
-.cardsJob
+.cards-job
     background-color: #ffff
     border-radius: 8px
     color: black
@@ -10,7 +10,7 @@
     width: 270px
     height: fit-content
 
-.cardJobContent
+.card-job-content
     width: 100%
     height: fit-content
     display: flex
@@ -34,9 +34,17 @@
     padding: 5px
     font-size: 0.8rem
 
+.div-bulle
+
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
 .bulle
-    background-color: #C50836
-    color: white
+    //background-color: $red-angular
+    // color: white
     display: flex
     flex-direction: column
     align-items: center
@@ -44,6 +52,12 @@
     width: 15px
     height: 15px
     border-radius: 50%
+    margin: 10px
+    img
+        object-fit: contain
+        object-position: center
+        width: 100%
+        height: 100%
     &:hover
         cursor: pointer
 

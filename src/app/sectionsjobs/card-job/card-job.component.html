@@ -1,14 +1,18 @@
-<section class="cardsJob">
-  <div class="cardJobContent">
+<section class="cards-job">
+  <div class="card-job-content">
     <div class="year-company">
-      <p class="year m-1">{{ job.year }}</p>
-      <p class="company m-1">{{ job.company }}</p>
-      <div class="bbtn">
+      <p class="year">{{ job.year }}</p>
+      <p class="company">{{ job.company }}</p>
+      <div class="div-bulle">
         <div *ngIf="!isSkillsVisible">
-          <p class="bulle" (click)="toggleVisibility()">+</p>
+          <p class="bulle" (click)="toggleVisibility()">
+            <img src="assets/svg/menu/down-arrow.svg" alt="">
+          </p>
         </div>
         <div *ngIf="isSkillsVisible">
-          <p class="bulle" (click)="toggleVisibility()">-</p>
+          <p class="bulle" (click)="toggleVisibility()">
+            <img src="assets/svg/menu/up-arrow.svg" alt="">
+          </p>
         </div>
       </div>
     </div>

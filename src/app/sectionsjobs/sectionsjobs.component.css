@@ -101,6 +101,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10vh;
   height: 90vh;
   border-bottom: 1px solid #d18007;
 }
