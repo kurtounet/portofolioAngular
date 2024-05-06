@@ -1,61 +1,110 @@
+@import '../../styles.sass'
+use sass:math
+use sass:list
+//$listColor: ($bleu, $orange, $noir, $violet, $red)
 
 section#home
     display: flex
+    flex-direction: column
     align-items: center
     justify-content: space-around
     width: 100%
-    height: 100vh
+    height: calc( 100vh - $height-header)
 
 #sectionOne
-    //border: 1px solid #d18007
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
     width: 100%
     height: 100%
-    #sectionOneContent
-       // border: 1px solid #d18007
-        display: flex
-        flex-direction: column
-        align-items: flex-start
 
-    #sectionOneName
-        color: #d18007
-        font-size: 3rem
-        display: flex
-        flex-direction: column
-        align-items: flex-end
+#sectionOneContent
 
-    #sectionOneButton
-        width: 100%
-        display: flex
-        justify-content: space-around
+    display: flex
+    flex-direction: column
+    align-items: center
+    align-content: center
 
-    #sectionOneTitle
-        width: 100%
+#sectionOneName
+    color: #d18007
+    font-size: 3rem
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    .divFirstName, .divLastName
         display: flex
-        align-items: flex-end
+        flex-direction: row
+        .letter
+            color: #ff9b04
+            margin: 1px
+            text-shadow: 0 0 15px #fcfbf9
+
+#sectionOneButton
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-around
+
+#sectionOneTitle
+    width: 100%
+    display: flex
+    align-items: flex-end
     h1
         font-size: 5rem
         color: white
         text-align: center
-    #btnCV
-        background-color: #C50836
-        border: 1px solid rgba(0, 0, 0, 0.2)
-        color: white
-        padding: 10px
-        border-radius: 5px
+
+#sectionOnelistButton
+
+    margin: 10px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-around
+    width: 100%
+    height: 100%
+
+    div
+        margin: 5px
+        width: fit-content
+        height: fit-content
+        #btnCV
+
+            padding: 5px
+            background-color: #C50836
+            border: 1px solid rgba(0, 0, 0, 0.2)
+            color: white
+            border-radius: 5px
+        img
+            width: 30px
+            height: 30px
+            object-fit: cover
+            object-position: center
+
+section#sectionListLogo
+
+    display: none
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 100vh
+    position: absolute
+    top: 0
+    z-index: -10
     ul
         list-style: none
         display: flex
+        flex-direction: row
+        flex-wrap: wrap
         align-items: center
         justify-content: center
         width: 100%
         height: 100%
 
         img
-            margin: 10px
+            margin: 20px
             object-fit: contain
             width: 50px
             height: 50px
@@ -69,3 +118,4 @@ section#home
                 cursor: pointer
                 transform: scale(1.2)
 
+@screen and (minx-width: 768px)

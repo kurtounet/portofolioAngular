@@ -1,0 +1,104 @@
+.cardsJob {
+  padding: 10px;
+  display: flex;
+  width: 270px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.bulle-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 5px;
+  height: 100%;
+  margin: 5px;
+}
+
+.line {
+  background-color: white;
+  width: 2px;
+  height: 100px;
+}
+
+.bulle {
+  background-color: #C50836;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.cardJobContent {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.year {
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 5px;
+}
+
+.content {
+  background-color: white;
+  border-radius: 5px;
+  align-content: flex-start;
+}
+
+.poste {
+  margin: 0;
+  padding: 5px;
+  color: red;
+  font-size: 0.8rem;
+}
+
+.companyAndButton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company, .pButton {
+  margin: 0;
+  padding: 5px;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.pButton {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  font-size: 1rem;
+}
+.pButton:hover {
+  cursor: pointer;
+}
+
+.skill {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  margin: 0;
+  list-style: none;
+}
+.skill li {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: fffff;
+  color: black;
+  font-size: 0.8rem;
+}/*# sourceMappingURL=card-job.component.css.map */

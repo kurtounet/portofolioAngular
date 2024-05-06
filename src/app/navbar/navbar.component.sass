@@ -1,20 +1,82 @@
-nav
-    background: #ff0000
-    color: white
-    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif
-    padding: 0
-    margin: 0
+// Variables pour la largeur du menu et la durée de l'animation
+@import '../../styles.sass'
+$menu-width: 100%
+$transition-duration: 0.3s
+.burger
     display: flex
-    justify-content: space-between
-    align-items: center
-    height: 100px
-    ul
-        list-style: none
+    justify-content: flex-end
+    cursor: pointer
+// Style de base pour le menu
+.menu
+    position: fixed
+    top: 0
+    left: 0
+    list-style: none
+    width: $menu-width
+    height: 100vh
+    background-color: #F2C335
+    display: flex
+    flex-direction: column
+    justify-content: start
+    transform: translateX(-100%) // Cacher le menu initialement
+    transition: transform $transition-duration ease
+
+.groupItem
+    color: #0D0D0D
+    border-radius: 8px
+    border: 1px solid #0D0D0D
+    width: 100%
+
+.linkItem
+    text-decoration: none
+    display: flex
+    flex-direction: row
+    align-items: flex-end
+    align-content: center
+    a
         display: flex
-        li
-            margin: 0 1rem
-            a
-                color: white
-                text-decoration: none
-                &:hover
-                    text-decoration: underline
+        flex-direction: column
+        align-items: center
+        align-content: center
+        font-size: 1rem
+        color: #0D0D0D
+        margin: 0.5rem 0
+        width: 100%
+        img
+            object-fit: contain
+            width: 1.5rem
+            height: 1.5rem1.5
+.close
+    cursor: pointer
+    display: flex
+    justify-content: flex-end
+
+// Style quand le menu est ouvert
+.open-menu
+    transform: translateX(0) // Afficher le menu
+
+.close-menu
+    transform: translateX(-$menu-width) // Afficher le menu
+
+// Style pour le reste du contenu pour ajouter un effet d'ombrage lors de l'ouverture du menu
+.content
+    transition: margin-left $transition-duration ease
+
+.open-content
+    margin-left: $menu-width // Décaler le contenu quand le menu est ouvert
+
+@media screen and (min-width: 728px)
+    .burger
+        display: none
+    .close
+        display: none
+    .menu
+
+        flex-direction: row
+        justify-content: space-around
+        align-items: flex-end
+        width: 100%
+        height: $height-header
+        transform: translateX(0)
+        a
+            margin: 0

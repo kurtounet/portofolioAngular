@@ -1,0 +1,192 @@
+/* You can add global styles to this file, and also import other style files */
+.containerSpider {
+  border: 1px solid red;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.spiderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.spiderWeb {
+  background-color: #DEDEDE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5px;
+  height: 10px;
+}
+
+.spider {
+  margin: 0 0 0 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 10%;
+}
+
+.rotating-image {
+  height: auto;
+  animation: flipY 5s linear infinite;
+  display: block;
+  margin: auto;
+  transform-style: preserve-3d;
+}
+
+@keyframes flipY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes fliphedding {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes bounceRight {
+  0%, 100% {
+    transform: translateX(0) translatey(10) scaleY(1);
+  }
+  25% {
+    transform: translateX(25%) scaleY(1.5);
+  }
+  50% {
+    transform: translateX(50%) scaleY(0.8);
+  }
+  75% {
+    transform: translateX(75%) scaleY(1.5);
+  }
+  80% {
+    transform: translateX(80%) scaleY(1.5);
+  }
+  85% {
+    transform: translateX(85%) scaleY(1.5);
+  }
+  100% {
+    transform: translateX(100%) scaleY(1);
+  }
+}
+.cadeaux {
+  animation: bounceRight 3s infinite ease-in-out;
+  width: 100px;
+  height: auto;
+}
+
+/* // $asset: "assets/images/logo-technologie/" */
+body {
+  background-color: #333;
+  color: white;
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.burger {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  list-style: none;
+  width: 100%;
+  height: 100vh;
+  background-color: #F2C335;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.groupItem {
+  color: #0D0D0D;
+  border-radius: 8px;
+  border: 1px solid #0D0D0D;
+  width: 100%;
+}
+
+.linkItem {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  align-content: center;
+}
+.linkItem a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  font-size: 1rem;
+  color: #0D0D0D;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+.linkItem a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 1.5rem;
+  height: 1.5rem1 0.5;
+}
+
+.close {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.open-menu {
+  transform: translateX(0);
+}
+
+.close-menu {
+  transform: translateX(-100%);
+}
+
+.content {
+  transition: margin-left 0.3s ease;
+}
+
+.open-content {
+  margin-left: 100%;
+}
+
+@media screen and (min-width: 728px) {
+  .burger {
+    display: none;
+  }
+  .close {
+    display: none;
+  }
+  .menu {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    height: 10vh;
+    transform: translateX(0);
+  }
+  .menu a {
+    margin: 0;
+  }
+}/*# sourceMappingURL=navbar.component.css.map */

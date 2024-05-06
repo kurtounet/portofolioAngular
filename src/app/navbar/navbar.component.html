@@ -1,11 +1,60 @@
-<nav id="navbar">
-  <ul>
-    <li class="link"><a Routlink="#burger">burger</a></li>
-    <li class="link"><a Routlink="#close">X</a></li>
-    <li class="link"><a Routlink="#home">Acceuil</a></li>
-    <li class="link"><a Routlink="#jobs">Mon parcourt</a></li>
-    <li class="link"><a Routlink="#skills">Mes compétences</a></li>
-    <li class="link"><a Routlink="#tech">Technologie</a></li>
-    <li class="link"><a Routlink="#contact">Contact</a></li>
+<nav>
+  <div class="burger">
+    <!-- Hamburger menu trigger -->
+    <div (click)="openNavbar()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 30">
+        <g fill="#000000" fill-rule="evenodd">
+          <rect width="30" height="6" rx="3"></rect>
+          <rect y="12" width="30" height="6" rx="3"></rect>
+          <rect y="24" width="30" height="6" rx="3"></rect>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <ul class="menu" [ngClass]="{  'open-menu': navbarOpen, 'close-menu': !navbarOpen}">
+    <li>
+      <a class="close" (click)="closeNavbar()">
+        <img src="assets/svg/menu/close.svg" alt="">
+
+      </a>
+    </li>
+    <li class="linkItem">
+      <a routerLink="#home">
+        <img src="assets/svg/menu/home.svg" alt="">
+        <p>Accueil</p>
+      </a>
+    </li>
+    <li class="linkItem"><a routerLink="#jobs">
+        <img src="assets/svg/menu/person.svg" alt="">
+        <p>Mon parcours</p>
+      </a></li>
+
+
+
+    <li class="linkItem"><a routerLink="#project">
+        <img src="assets/svg/menu/wrench.svg" alt="">
+        <p>Mes projets</p>
+      </a></li>
+    <li class="linkItem"><a routerLink="/tech">
+        <img src="assets/svg/logo-tech/github_logo.svg" alt="">
+        <p>Mon GitHub</p>
+      </a></li>
+
+    <li class="linkItem"><a routerLink="#tech">
+        <img src="assets/svg/menu/home.svg" alt="">
+        <p>Mes Technologie</p>
+      </a></li>
+
+
+
+    <li class="linkItem"><a routerLink="tech">
+        <img src="assets/svg/menu/linkedin_icon.svg" alt="">
+        <p>Linkedin</p>
+      </a></li>
+    <li class="linkItem"><a routerLink="#contact">
+        <img src="assets/svg/menu/email.svg" alt="">
+        <p>Contact</p>
+      </a></li>
+
   </ul>
 </nav>

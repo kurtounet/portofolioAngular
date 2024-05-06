@@ -1,0 +1,16 @@
+.sectionProject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-bottom: 1px solid #d18007;
+}
+
+.listProjects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=sectionproject.component.css.map */
