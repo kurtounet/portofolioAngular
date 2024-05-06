@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -16,7 +18,9 @@ import { CircularListComponent } from './section-landing/circular-list/circular-
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,
+  imports: [
+    RouterOutlet,
+    CommonModule,
     HeaderComponent,
     SectionLandingComponent,
     SectionsjobsComponent,
@@ -27,6 +31,10 @@ import { CircularListComponent } from './section-landing/circular-list/circular-
     CardprojectComponent,
     SectionprojectComponent,
     CardTechnoComponent,
+
+
+
+
 
   ],
   templateUrl: './app.component.html',

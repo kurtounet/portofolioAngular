@@ -27,26 +27,63 @@
       </div>
     </div>
   </section>
+  
   <!--section logo -->
   <section id="sectionListLogo">
-    <ul id="listLogo">
-      <div class="d-flex">
-        <img class="rotating-image" src="assets/svg/logo-tech/html5_logo.svg" alt="Github">
-        <img class="rotating-image" src="assets/svg/logo-tech/css3_logo.svg" alt="Linkedin">
+    <div class="ligneLogo">
+      <div class="rotating-image" *ngFor="let techno of tabTechno">
+        <img src="assets/svg/logo-tech/{{ techno }}_logo.svg" alt="{{ techno }}">
       </div>
-      <div class="d-flex">
-        <li class="rotating-image"><img src="assets/svg/logo-tech/angular_logo.svg" alt="Symfony"></li>
-        <li class="rotating-image"><img src="assets/svg/logo-tech/apiplatform_logo.svg" alt="ApiPlatform"></li>
-        <li class="rotating-image"><img src="assets/svg/logo-tech/symfony_logo.svg" alt="Angular"></li>
+
+    </div>
+    <!--section logo -->
+    <section id="sectionListLogo">
+      <div class="ligneLogo">
+        <div class="rotating-image">
+          <img src="assets/svg/logo-tech/symfony_logo.svg" alt="Symfony">
+        </div>
+        <div class="rotating-image">
+          <img src="assets/svg/logo-tech/apiplatform_logo.svg" alt="ApiPlatform">
+        </div>
+        <div class="rotating-image">
+          <img src="assets/svg/logo-tech/angular_logo.svg" alt="Angular">
+        </div>
+        <div class="rotating-image">
+          <img src="assets/svg/logo-tech/typescript_logo.svg" alt="Typescript">
+        </div>
       </div>
-      <div class="d-flex">
-        <li class="rotating-image"><img src="assets/svg/logo-tech/javascript_logo.svg" alt=""></li>
-        <li class="rotating-image"><img src="assets/svg/logo-tech/typescript_logo.svg" alt=""></li>
+      <div class="ligneLogo">
+        <div class="rotating-image">
+          <img src="assets/svg/logo-tech/mysql_logo.svg" alt="Mysql">
+        </div>
+        <div class="rotating-image">
+          <img src="assets/svg/logo-tech/css3_logo.svg" alt="CC 3">
+        </div>
+        <div class="rotating-image">
+          <img src="assets/svg/logo-tech/javascript_logo.svg" alt="Javascript">
+        </div>
+        <div class="rotating-image">
+          <img src="assets/svg/logo-tech/html5_logo.svg" alt="html 5">
+        </div>
       </div>
-    </ul>
+      <div class="ligneLogo">
+        <div class="rotating-image">
+          <img src="assets/svg/logo-tech/mariadb_logo.svg" alt="Mysql">
+        </div>
+        <div class="rotating-image">
+          <img src="assets/svg/logo-tech/css3_logo.svg" alt="CC 3">
+        </div>
+        <div class="rotating-image">
+          <img src="assets/svg/logo-tech/javascript_logo.svg" alt="Symfony">
+        </div>
+        <div class="rotating-image">
+          <img src="assets/svg/logo-tech/apiplatform_logo.svg" alt="ApiPlatform">
+        </div>
+      </div>
+
+    </section>
+    <!--section 2 -->
+    <section id="sectionTwone">
+      <!--   <app-circular-list></app-circular-list> -->
+    </section>
   </section>
-  <!--section 2 -->
-  <section id="sectionTwone">
-    <!--   <app-circular-list></app-circular-list> -->
-  </section>
-</section>

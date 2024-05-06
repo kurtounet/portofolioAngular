@@ -1,9 +1,51 @@
-
+@import "../../../styles.sass"
 .cardsJob
-    padding: 10px
+    background-color: #ffff
+    border-radius: 8px
+    color: black
+    margin: 10px
+    padding: 0px
     display: flex
+    align-items: center
     width: 270px
     height: fit-content
+
+.cardJobContent
+    width: 100%
+    height: fit-content
+    display: flex
+    flex-direction: column
+
+.year
+    color: $red-angular
+    padding: 5px
+    margin: 0
+
+.year-company
+    width: 100%
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+
+.company
+    color: $red-angular
+    margin: 0
+    padding: 5px
+    font-size: 0.8rem
+
+.bulle
+    background-color: #C50836
+    color: white
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 15px
+    height: 15px
+    border-radius: 50%
+    &:hover
+        cursor: pointer
 
 .bulle-line
     display: flex
@@ -13,35 +55,17 @@
     width: 5px
     height: 100%
     margin: 5px
+
 .line
     background-color: #ffff
     width: 2px
     height: 100px
-.bulle
-    background-color: #C50836
-    display: flex
-    align-items: center
-    justify-content: center
-    width: 15px
-    height: 15px
-    border-radius: 50%
 
-.cardJobContent
-
-    width: 100%
-    height: fit-content
-    display: flex
-    flex-direction: column
-
-.year
-    background-color: #333
-    color: #fff
-    margin: 0
-    padding: 5px
 .content
     background-color: white
     border-radius: 5px
     align-content: flex-start
+
 .poste
     margin: 0
     padding: 5px
@@ -50,18 +74,6 @@
 .companyAndButton
     display: flex
     justify-content: space-between
-.company,.pButton
-    margin: 0
-    padding: 5px
-    color: black
-    font-size: 0.8rem
-.pButton
-    display: flex
-    justify-content: flex-end
-    width: 100%
-    font-size: 1rem
-    &:hover
-        cursor: pointer
 
 .skill
     color: black

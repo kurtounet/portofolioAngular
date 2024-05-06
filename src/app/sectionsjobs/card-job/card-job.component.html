@@ -1,24 +1,46 @@
 <section class="cardsJob">
-  <div class="bulle-line">
-    <div class="bulle"></div>
-    <div class="line"></div>
-  </div>
   <div class="cardJobContent">
-    <p class="year">{{ job.year }}</p>
-    <div class="content">
-      <h3 class="poste">{{ job.poste }}</h3>
-      <div class="companyAndButton">
-        <p class="company">{{ job.company }}</p>
+    <div class="year-company">
+      <p class="year m-1">{{ job.year }}</p>
+      <p class="company m-1">{{ job.company }}</p>
+      <div class="bbtn">
         <div *ngIf="!isSkillsVisible">
-          <p class="pButton" (click)="toggleVisibility()">+</p>
+          <p class="bulle" (click)="toggleVisibility()">+</p>
         </div>
         <div *ngIf="isSkillsVisible">
-          <p class="pButton" (click)="toggleVisibility()">-</p>
+          <p class="bulle" (click)="toggleVisibility()">-</p>
         </div>
       </div>
-      <ul class="skill" [style.display]="isSkillsVisible ? 'block' : 'none'">
-        <li *ngFor="let skill of job.skill">{{ skill }}</li>
-      </ul>
     </div>
+    <ul class="skill" [style.display]="isSkillsVisible ? 'block' : 'none'">
+      <li *ngFor="let skill of job.skill">{{ skill }}</li>
+    </ul>
   </div>
 </section>
+
+
+
+
+<!-- <div class="line"></div> 
+    <div class="line"></div>-->
+
+<!-- 
+    <div class="cardJobContent">
+      <p class="year">{{ job.year }}</p>
+      <div class="content">
+        <h3 class="poste">{{ job.poste }}</h3>
+        <div class="companyAndButton">
+          <p class="company">{{ job.company }}</p>
+          <div *ngIf="!isSkillsVisible">
+            <p class="pButton" (click)="toggleVisibility()">+</p>
+          </div>
+          <div *ngIf="isSkillsVisible">
+            <p class="pButton" (click)="toggleVisibility()">-</p>
+          </div>
+        </div>
+        <ul class="skill" [style.display]="isSkillsVisible ? 'block' : 'none'">
+          <li *ngFor="let skill of job.skill">{{ skill }}</li>
+        </ul>
+      </div>
+    </div>
+  -->

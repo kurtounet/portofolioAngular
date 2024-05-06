@@ -1,9 +1,107 @@
+/* You can add global styles to this file, and also import other style files */
+.containerSpider {
+  border: 1px solid red;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.spiderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.spiderWeb {
+  background-color: #DEDEDE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5px;
+  height: 10px;
+}
+
+.spider {
+  margin: 0 0 0 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 10%;
+}
+
+.rotating-image {
+  height: auto;
+  animation: flipY 5s linear infinite;
+  display: block;
+  margin: auto;
+  transform-style: preserve-3d;
+}
+
+@keyframes flipY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes fliphedding {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes bounceRight {
+  0%, 100% {
+    transform: translateX(0) translatey(10) scaleY(1);
+  }
+  25% {
+    transform: translateX(25%) scaleY(1.5);
+  }
+  50% {
+    transform: translateX(50%) scaleY(0.8);
+  }
+  75% {
+    transform: translateX(75%) scaleY(1.5);
+  }
+  80% {
+    transform: translateX(80%) scaleY(1.5);
+  }
+  85% {
+    transform: translateX(85%) scaleY(1.5);
+  }
+  100% {
+    transform: translateX(100%) scaleY(1);
+  }
+}
+.cadeaux {
+  animation: bounceRight 3s infinite ease-in-out;
+  width: 100px;
+  height: auto;
+}
+
+/* // $asset: "assets/images/logo-technologie/" */
+body {
+  background-color: #333;
+  color: white;
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
 .sectionJobs {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 90vh;
   border-bottom: 1px solid #d18007;
 }
 

@@ -1,9 +1,157 @@
-.cardsJob {
-  padding: 10px;
+/* You can add global styles to this file, and also import other style files */
+.containerSpider {
+  border: 1px solid red;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.spiderContainer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.spiderWeb {
+  background-color: #DEDEDE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5px;
+  height: 10px;
+}
+
+.spider {
+  margin: 0 0 0 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 10%;
+}
+
+.rotating-image {
+  height: auto;
+  animation: flipY 5s linear infinite;
+  display: block;
+  margin: auto;
+  transform-style: preserve-3d;
+}
+
+@keyframes flipY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes fliphedding {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes bounceRight {
+  0%, 100% {
+    transform: translateX(0) translatey(10) scaleY(1);
+  }
+  25% {
+    transform: translateX(25%) scaleY(1.5);
+  }
+  50% {
+    transform: translateX(50%) scaleY(0.8);
+  }
+  75% {
+    transform: translateX(75%) scaleY(1.5);
+  }
+  80% {
+    transform: translateX(80%) scaleY(1.5);
+  }
+  85% {
+    transform: translateX(85%) scaleY(1.5);
+  }
+  100% {
+    transform: translateX(100%) scaleY(1);
+  }
+}
+.cadeaux {
+  animation: bounceRight 3s infinite ease-in-out;
+  width: 100px;
+  height: auto;
+}
+
+/* // $asset: "assets/images/logo-technologie/" */
+body {
+  background-color: #333;
+  color: white;
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.cardsJob {
+  background-color: white;
+  border-radius: 8px;
+  color: black;
+  margin: 10px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
   width: 270px;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.cardJobContent {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.year {
+  color: #C50836;
+  padding: 5px;
+  margin: 0;
+}
+
+.year-company {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company {
+  color: #C50836;
+  margin: 0;
+  padding: 5px;
+  font-size: 0.8rem;
+}
+
+.bulle {
+  background-color: #C50836;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.bulle:hover {
+  cursor: pointer;
 }
 
 .bulle-line {
@@ -22,31 +170,6 @@
   height: 100px;
 }
 
-.bulle {
-  background-color: #C50836;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-}
-
-.cardJobContent {
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-}
-
-.year {
-  background-color: #333;
-  color: #fff;
-  margin: 0;
-  padding: 5px;
-}
-
 .content {
   background-color: white;
   border-radius: 5px;
@@ -63,23 +186,6 @@
 .companyAndButton {
   display: flex;
   justify-content: space-between;
-}
-
-.company, .pButton {
-  margin: 0;
-  padding: 5px;
-  color: black;
-  font-size: 0.8rem;
-}
-
-.pButton {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  font-size: 1rem;
-}
-.pButton:hover {
-  cursor: pointer;
 }
 
 .skill {
