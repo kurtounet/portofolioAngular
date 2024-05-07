@@ -28,7 +28,7 @@ $item-offset: $circular-list-size / 2 - 50px // Définition de l'offset des él�
 
         @for $i from 1 through $items-count
             &:nth-child(#{$i})
-                $angle: (360deg / $items-count) * ($i - 1)
+               // $angle: cal(360 / $items-count) * cal($i - 1)
                 transform: rotate($angle) translate($item-offset) rotate(-$angle)
 
 @keyframes rotate

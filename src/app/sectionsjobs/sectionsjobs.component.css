@@ -101,8 +101,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10vh;
-  height: 90vh;
+  scroll-margin-top: 2rem;
+  height: 100%;
   border-bottom: 1px solid #d18007;
 }
 

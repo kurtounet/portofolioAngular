@@ -23,22 +23,6 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
-.circular-list li:nth-child(1) {
-  transform: rotate(0deg) translate(250px) rotate(0deg);
-}
-.circular-list li:nth-child(2) {
-  transform: rotate(72deg) translate(250px) rotate(-72deg);
-}
-.circular-list li:nth-child(3) {
-  transform: rotate(144deg) translate(250px) rotate(-144deg);
-}
-.circular-list li:nth-child(4) {
-  transform: rotate(216deg) translate(250px) rotate(-216deg);
-}
-.circular-list li:nth-child(5) {
-  transform: rotate(288deg) translate(250px) rotate(-288deg);
-}
-
 @keyframes rotate {
   from {
     transform: rotate(0deg);

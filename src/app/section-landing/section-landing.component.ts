@@ -1,9 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CircularListComponent } from '../section-landing/circular-list/circular-list.component';
 
-import { trigger, state, style, animate, transition } from '@angular/animations';
+//import { trigger, state, style, animate, transition } from '@angular/animations';
 @Component({
   selector: 'app-section-landing',
   standalone: true,
@@ -22,7 +21,4 @@ export class SectionLandingComponent {
   tablastName = this.lastName.split('');
   items = ['html5', 'ccs3', 'Symfony', 'Angular', 'ApiPlatform', 'Javascript'];
   isOpen = false;
-
-
-
 }
